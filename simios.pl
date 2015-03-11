@@ -1,134 +1,151 @@
-
 %propiedades(prosimii).
 propiedades(prosimii,'sub orden').
-propiedades(prosimii,'poca inteligencia').
-propiedades(prosimii,'bigotes').
-propiedades(prosimii,'hocicos largos').
-propiedades(prosimii,'nariz humeda').
-propiedades(prosimii,'tienen garras  aunque tambien al menos una una').
-propiedades(prosimii,'no poseen vision a color').
+propiedades('sub orden','poca inteligencia').
+propiedades('poca inteligencia','bigotes').
+propiedades('bigotes','hocicos largos').
+propiedades('hocicos largos','nariz humeda').
+propiedades('nariz humeda','tienen garras  aunque tambien al menos una una').
+propiedades('tienen garras  aunque tambien al menos una una','no poseen vision a color').  
+propiedades('no poseen vision a color',fin).
 
 %propiedades(lemuriformes).
 propiedades(lemuriformes,'infra orden').
-propiedades(lemuriformes,'ubicacion geografica').
-propiedades(lemuriformes,'madagascar').
-propiedades(lemuriformes,'cola enorme').
-propiedades(lemuriformes,'enormes extremidades inferiores').
-propiedades(lemuriformes,'gran capacidad de salto').
-propiedades(lemuriformes,'sus ojos presentan tapetum lucidum').
-propiedades(lemuriformes,'nocturnos').
+propiedades('infra orden','ubicacion geografica:madagascar').
+propiedades('ubicacion geografica:madagascar','cola enorme').
+propiedades('cola enorme','enormes extremidades inferiores').
+propiedades('enormes extremidades inferiores','gran capacidad de salto').
+propiedades('gran capacidad de salto','sus ojos presentan tapetum lucidum').
+propiedades('sus ojos presentan tapetum lucidum','nocturnos').
+propiedades('nocturnos',fin).
 
 %propiedades(lorisiformes).
 propiedades(lorisiformes,'infra orden').
-propiedades(lorisiformes,'ubicacion geografica').
-propiedades(lorisiformes,'asia y africa  exceptuando madagascar').
-propiedades(lorisiformes,'extremidades y colas cortas').
-propiedades(lorisiformes,'malos saltadores').
+propiedades('infra orden','ubicacion geografica:asia y africa exceptuando madagascar').
+propiedades('ubicacion geografica:asia y africa exceptuando madagascar','extremidades y colas cortas').
+propiedades('extremidades y colas cortas','malos saltadores').
+propiedades('malos saltadores',fin).
 
 %propiedades(tarsiformes).
 propiedades(tarsiformes,'infra orden').
-propiedades(tarsiformes,'ubicacion geografica').
-propiedades(tarsiformes,'asia').
-propiedades(tarsiformes,'linea de wallace').
-propiedades(tarsiformes,'posee un solo genero').
-propiedades(tarsiformes,'los huesos de sus pies son alargados').
+propiedades('infra orden','ubicacion geografica:asia').
+propiedades('ubicacion geografica:asia','linea de wallace').
+propiedades('linea de wallace','posee un solo genero').
+propiedades('posee un solo genero','los huesos de sus pies son alargados').
+propiedades('los huesos de sus pies son alargados',fin).
 
 %propiedades(anthropoidea).
 propiedades(anthropoidea,'sub orden').
-propiedades(anthropoidea,'caras planas').
-propiedades(anthropoidea,'oidos pequenos').
-propiedades(anthropoidea,'cerebros complejos').
+propiedades('sub orden','caras planas').
+propiedades('caras planas','oidos pequenos').
+propiedades('oidos pequenos','cerebros complejos').
+propiedades('cerebros complejos',fin).
 
 %propiedades(platyrrhini).
-propiedades(platyrrhini,'infra orden  y ceboidea  super familia').
-propiedades(platyrrhini,'ubicacion geografica').
-propiedades(platyrrhini,'america central y del sur').
-propiedades(platyrrhini,'todos pertenecen a la clasificacion de los monos').
-propiedades(platyrrhini,'fosas nasales orientadas hacia afuera').
-propiedades(platyrrhini,'colas prensiles').
-propiedades(platyrrhini,'no poseen callosidades isquiaticas').
+propiedades(platyrrhini,'infra orden y ceboidea super familia').
+propiedades('infra orden y ceboidea super familia','ubicacion geografica:america central y del sur').
+propiedades('ubicacion geografica:america central y del sur','todos pertenecen a la clasificacion de los monos').
+propiedades('todos pertenecen a la clasificacion de los monos','fosas nasales orientadas hacia afuera').
+propiedades('fosas nasales orientadas hacia afuera','colas prensiles').
+propiedades('colas prensiles','no poseen callosidades isquiaticas').
+propiedades('no poseen callosidades isquiaticas',fin).
 
 %propiedades(callitrichidae).
 propiedades(callitrichidae,'familia').
-propiedades(callitrichidae,'mas pequenos de los anthropoideas').
+propiedades('familia','mas pequenos de los anthropoideas').
+propiedades('mas pequenos de los anthropoideas',fin).
 
 %propiedades(atelidae).
 propiedades(atelidae,'familia').
-propiedades(atelidae,'colas largas').
-propiedades(atelidae,'area sensible en una parte de la cola para ser usado como una extension adicional del cuerpo').
+propiedades('familia','colas largas').
+propiedades('colas largas','area sensible en una parte de la cola para ser usado como una extension adicional del cuerpo').
+propiedades('area sensible en una parte de la cola para ser usado como una extension adicional del cuerpo',fin).
 
 %propiedades(cebidae).
 propiedades(cebidae,'familia').
-propiedades(cebidae,'peso maximo 39 kgcatarrhini  infra orden').
-propiedades(cebidae,'ubicacion geografica').
-propiedades(cebidae,'africa y asia').
-propiedades(cebidae,'fosas nasales orientadas hacia abajo').
-propiedades(cebidae,'colas no prensiles').
-propiedades(cebidae,'poseen callosidades isquiaticas').
+propiedades(cebidae,'peso maximo 39 kg').
+propiedades('peso maximo 39 kg',fin).
+
+%propiedades catarrhini
+propiedades(catarrhini,'infra orden').
+propiedades(catarrhini,'ubicacion geografica').
+propiedades(catarrhini,'africa y asia').
+propiedades(catarrhini,'fosas nasales orientadas hacia abajo').
+propiedades(catarrhini,'colas no prensiles').
+propiedades(catarrhini,'poseen callosidades isquiaticas').
 
 %propiedades(cercopithecoidea).
-propiedades(cercopithecoidea,'super familia  y cercopothecidae  familia').
-propiedades(cercopithecoidea,'ubicacion geografica').
-propiedades(cercopithecoidea,'africa').
-propiedades(cercopithecoidea,'todos pertenecen a la clasificacion de los monos').
-propiedades(cercopithecoidea,'tamano maximo').
-propiedades(cercopithecoidea,'13 metros').
-propiedades(cercopithecoidea,'peso maximo').
-propiedades(cercopithecoidea,'8 kg').
-propiedades(cercopithecoidea,'espectativa de vida').
-propiedades(cercopithecoidea,'25 anos').
+propiedades(cercopithecoidea,'super familia y cercopothecidae familia').
+propiedades('super familia y cercopothecidae familia','ubicacion geografica').
+propiedades('ubicacion geografica','africa').
+propiedades('africa','todos pertenecen a la clasificacion de los monos').
+propiedades('todos pertenecen a la clasificacion de los monos','tamano maximo').
+propiedades('tamano maximo','13 metros').
+propiedades('13 metros','peso maximo').
+propiedades('peso maximo','8 kg').
+propiedades('8 kg','espectativa de vida').
+propiedades('espectativa de vida','25 anos').
+propiedades('25 anos',fin).
 
 %propiedades(cercopithecinae).
 propiedades(cercopithecinae,'sub familia').
-propiedades(cercopithecinae,'bolsas en las mejillas para almacenar comida').
+propiedades('sub familia','bolsas en las mejillas para almacenar comida').
+propiedades('bolsas en las mejillas para almacenar comida',fin).
 
 %propiedades(colombinae).
 propiedades(colombinae,'sub familia').
-propiedades(colombinae,'tamano mediano').
-propiedades(colombinae,'estomago saculado').
-propiedades(colombinae,'glandulas salivales').
-propiedades(colombinae,'diurnos').
-propiedades(colombinae,'colas largas').
-propiedades(colombinae,'rumiante').
+propiedades('sub familia','tamano mediano').
+propiedades('tamano mediano','estomago saculado').
+propiedades('estomago saculado','glandulas salivales').
+propiedades('glandulas salivales','diurnos').
+propiedades('diurnos','colas largas').
+propiedades('colas largas','rumiante').
+propiedades('rumiante',fin).
 
 %propiedades(hominoidea).
 propiedades(hominoidea,'super familia').
-propiedades(hominoidea,'todos pertenecen a la clasificacion de los simios').
-propiedades(hominoidea,'sin cola').
+propiedades('super familia','todos pertenecen a la clasificacion de los simios').
+propiedades('todos pertenecen a la clasificacion de los simios','sin cola').
+propiedades('sin cola',fin).
 
 %propiedades(hylobatidae).
 propiedades(hylobatidae,'familia').
-propiedades(hylobatidae,'posee un solo genero').
-propiedades(hylobatidae,'brazos largos').
-propiedades(hylobatidae,'piernas cortas').
-propiedades(hylobatidae,'poseen saco laringeo que les permite emitir sonidos audibles a gran distancia').
+propiedades('familia','posee un solo genero').
+propiedades('posee un solo genero','brazos largos').
+propiedades('brazos largos','piernas cortas').
+propiedades('piernas cortas','poseen saco laringeo que les permite emitir sonidos audibles a gran distancia').
+propiedades('poseen saco laringeo que les permite emitir sonidos audibles a gran distancia',fin).
 
 %propiedades(pongidae).
 propiedades(pongidae,'sub familia').
-propiedades(pongidae,'los simios mas grandes sin contar a los humanos').
-propiedades(pongidae,'llamados tambien grandes simios').
+propiedades('sub familia','los simios mas grandes sin contar a los humanos').
+propiedades('los simios mas grandes sin contar a los humanos','llamados tambien grandes simios').
+propiedades('llamados tambien grandes simios',fin).
 
 %propiedades(pongo_orangutan).
-propiedades(pongo_orangutan,' genero').
-propiedades(pongo_orangutan,'cabello rojizo/marron').
-propiedades(pongo_orangutan,'brazos largos').
-propiedades(pongo_orangutan,'piernas cortas').
-propiedades(pongo_orangutan,'4 dedos y 1 pulgar reversible por cada mano').
+propiedades(pongo_orangutan,'genero').
+propiedades('genero','cabello rojizo/marron').
+propiedades('cabello rojizo/marron','brazos largos').
+propiedades('brazos largos','piernas cortas').
+propiedades('piernas cortas','4 dedos y 1 pulgar reversible por cada mano').
+propiedades('4 dedos y 1 pulgar reversible por cada mano',fin).
 
 %propiedades(pan_chimpanse).
-propiedades(pan_chimpanse,' genero').
-propiedades(pan_chimpanse,'alcanzan los 17 m de altura parados').
-propiedades(pan_chimpanse,'pesan como maximo 70 kg').
-propiedades(pan_chimpanse,'sus brazos son 15 veces mas largas que su torso').
-propiedades(pan_chimpanse,'pueden caminar en dos patas').
-propiedades(pan_chimpanse,'pero suelen caminar en cuatrogorilla  genero').
-propiedades(pan_chimpanse,'simio mas grande').
-propiedades(pan_chimpanse,'pesan maximo 180 kg').
+propiedades(pan_chimpanse,'genero').
+propiedades('genero','alcanzan los 17 m de altura parados').
+propiedades('alcanzan los 17 m de altura parados','pesan como maximo 70 kg').
+propiedades('pesan como maximo 70 kg','sus brazos son 15 veces mas largas que su torso').
+propiedades('sus brazos son 15 veces mas largas que su torso','pueden caminar en dos patas').
+propiedades('pueden caminar en dos patas','pero suelen caminar en cuatrogorilla genero').
+propiedades('pero suelen caminar en cuatrogorilla genero','simio mas grande').
+propiedades('simio mas grande','pesan maximo 180 kg').
+propiedades('pesan maximo 180 kg',fin).
 
 %propiedades(hominidae).
-propiedades(hominidae,'familia  y homo  genero').
-propiedades(hominidae,'posee menos cabello que el resto de los primates').
-propiedades(hominidae,'caminan en dos patas').
-propiedades(hominidae,'poseen el mayor intelecto con respecto al resto de primates').
+propiedades(hominidae,'familia y homo genero').
+propiedades('familia y homo genero','posee menos cabello que el resto de los primates').
+propiedades('posee menos cabello que el resto de los primates','caminan en dos patas').
+propiedades('caminan en dos patas','poseen el mayor intelecto con respecto al resto de primates').
+propiedades('poseen el mayor intelecto con respecto al resto de primates',fin).
 
-mostrar(Y,L):-findall(X,propiedades(Y,X),L).
+mostrar(Y):-propiedades(Y,Z),write(Z),write('\n'),mostrar(Z).
+prosimii:-mostrar(prosimii).
