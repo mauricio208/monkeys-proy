@@ -130,3 +130,5 @@ propiedades(hominidae,'familia  y homo  genero').
 propiedades(hominidae,'posee menos cabello que el resto de los primates').
 propiedades(hominidae,'caminan en dos patas').
 propiedades(hominidae,'poseen el mayor intelecto con respecto al resto de primates').
+
+mostrar(Y,L):-findall(X,propiedades(Y,X),L).
