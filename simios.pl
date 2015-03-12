@@ -53,8 +53,8 @@ propiedades('colas largas','area sensible en una parte de la cola para ser usado
 propiedades('area sensible en una parte de la cola para ser usado como una extension adicional del cuerpo',fin).
 
 %propiedades(cebidae).
-propiedades(cebidae,'peso maximo 39 kg').
-propiedades('peso maximo 39 kg',fin).
+propiedades(cebidae,'peso maximo 3.9 kg').
+propiedades('peso maximo 3.9 kg',fin).
 
 %propiedades catarrhini
 propiedades(catarrhini,'ubicacion geografica:africa y asia').
@@ -68,8 +68,8 @@ propiedades(cercopithecidae,'ubicacion geografica:africa').
 propiedades(cercopithecoidea,'ubicacion geografica:africa').
 propiedades('ubicacion geografica:africa','todos pertenecen a la clasificacion de los monos').
 propiedades('todos pertenecen a la clasificacion de los monos','tamano maximo').
-propiedades('tamano maximo','13 metros').
-propiedades('13 metros','peso maximo').
+propiedades('tamano maximo','1.3 metros').
+propiedades('1.3 metros','peso maximo').
 propiedades('peso maximo','8 kg').
 propiedades('8 kg','espectativa de vida').
 propiedades('espectativa de vida','25 anos').
@@ -113,10 +113,10 @@ propiedades('piernas cortas','4 dedos y 1 pulgar reversible por cada mano').
 propiedades('4 dedos y 1 pulgar reversible por cada mano',fin).
 
 %propiedades(pan_chimpanse).
-propiedades(pan,'alcanzan los 17 m de altura parados').
-propiedades('alcanzan los 17 m de altura parados','pesan como maximo 70 kg').
+propiedades(pan,'alcanzan los 1.7 m de altura parados').
+propiedades('alcanzan los 1.7 m de altura parados','pesan como maximo 70 kg').
 propiedades('pesan como maximo 70 kg','sus brazos son 15 veces mas largas que su torso').
-propiedades('sus brazos son 15 veces mas largas que su torso','pueden caminar en dos patas').
+propiedades('sus brazos son 1.5 veces mas largas que su torso','pueden caminar en dos patas').
 propiedades('pueden caminar en dos patas','pero suelen caminar en cuatro').
 propiedades('pero suelen caminar en cuatro',fin).
 %gorilla
@@ -192,10 +192,10 @@ rama(gorilla,fin).
 rama(hominidae,homo).
 rama(homo,fin).
 
-p([A|_],H,X):-pa(X,A),A=fin.
-p([A|L],H,X):-not(pa(X,A)),p(L,H,X).
-p([A|L],H,X):-pa(X,A),p(H,H,A).
-prop(L,X):-p([final|L],[final|L],X). %comprueba propiedades
+p([A|_],H,X):-propiedades(X,A),A=fin.
+p([A|L],H,X):-not(propiedades(X,A)),p(L,H,X).
+p([A|L],H,X):-propiedades(X,A),p(H,H,A).
+prop(L,X):-p([fin|L],[fin|L],X). %comprueba propiedades
 
 %clasificacion1(L,Y,R):-rama(Y,Z),not(prop(L,Z)),rama(Z,F), F==fin,fail.
 %clasificacion1(L,Y,R):-rama(Y,Z),not(prop(L,Z)),clasificacion1(L,Z,R1),append([Y],R1,R).
