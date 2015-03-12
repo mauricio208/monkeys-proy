@@ -105,19 +105,21 @@ propiedades('los simios mas grandes sin contar a los humanos','llamados tambien 
 propiedades('llamados tambien grandes simios',fin).
 
 %propiedades(pongo_orangutan).
-propiedades(pongo_orangutan,'cabello rojizo/marron').
+propiedades(pongo,'cabello rojizo/marron').
 propiedades('cabello rojizo/marron','brazos largos').
 propiedades('brazos largos','piernas cortas').
 propiedades('piernas cortas','4 dedos y 1 pulgar reversible por cada mano').
 propiedades('4 dedos y 1 pulgar reversible por cada mano',fin).
 
 %propiedades(pan_chimpanse).
-propiedades(pan_chimpanse,'alcanzan los 17 m de altura parados').
+propiedades(pan,'alcanzan los 17 m de altura parados').
 propiedades('alcanzan los 17 m de altura parados','pesan como maximo 70 kg').
 propiedades('pesan como maximo 70 kg','sus brazos son 15 veces mas largas que su torso').
 propiedades('sus brazos son 15 veces mas largas que su torso','pueden caminar en dos patas').
-propiedades('pueden caminar en dos patas','pero suelen caminar en cuatrogorilla genero').
-propiedades('pero suelen caminar en cuatrogorilla genero','simio mas grande').
+propiedades('pueden caminar en dos patas','pero suelen caminar en cuatro').
+propiedades('pero suelen caminar en cuatro',fin).
+%gorilla
+propiedades('gorilla','simio mas grande').
 propiedades('simio mas grande','pesan maximo 180 kg').
 propiedades('pesan maximo 180 kg',fin).
 
@@ -130,22 +132,23 @@ propiedades('poseen el mayor intelecto con respecto al resto de primates',fin).
 mostrar(Y):-propiedades(Y,Z), Z=fin.
 mostrar(Y):-propiedades(Y,Z),write(Z),write('\n'),mostrar(Z).
 
-prosimii:-mostrar(prosimii).
-lemuriformes:-mostrar(lemuriformes).
-lorisiformes:-mostrar(lorisiformes).
-tarsiformes:-mostrar(tarsiformes).
-anthropoidea:-mostrar(anthropoidea).
-platyrrhini:-mostrar(platyrrhini).
-callitrichidae:-mostrar(callitrichidae).
-atelidae:-mostrar(atelidae).
-cebidae:-mostrar(cebidae).
-catarrhini:-mostrar(catarrhini).
-cercopithecoidea:-mostrar(cercopithecoidea).
-cercopithecinae:-mostrar(cercopithecinae).
-colombinae:-mostrar(colombinae).
-hominoidea:-mostrar(hominoidea).
-hylobatidae:-mostrar(hylobatidae).
-pongidae:-mostrar(pongidae).
-pongo_orangutan:-mostrar(pongo_orangutan).
-pan_chimpanse:-mostrar(pan_chimpanse).
-hominidae:-mostrar(hominidae).
+prosimii:-mostrar(prosimii),!.
+lemuriformes:-mostrar(lemuriformes),!.
+lorisiformes:-mostrar(lorisiformes),!.
+tarsiformes:-mostrar(tarsiformes),!.
+anthropoidea:-mostrar(anthropoidea),!.
+platyrrhini:-mostrar(platyrrhini),!.
+callitrichidae:-mostrar(callitrichidae),!.
+atelidae:-mostrar(atelidae),!.
+cebidae:-mostrar(cebidae),!.
+catarrhini:-mostrar(catarrhini),!.
+cercopithecoidea:-mostrar(cercopithecoidea),!.
+cercopithecinae:-mostrar(cercopithecinae),!.
+colombinae:-mostrar(colombinae),!.
+hominoidea:-mostrar(hominoidea),!.
+hylobatidae:-mostrar(hylobatidae),!.
+pongidae:-mostrar(pongidae),!.
+pongo:-mostrar(pongo),!.
+pan:-mostrar(pan),!.
+gorilla:-mostrar(gorilla),!.
+hominidae:-mostrar(hominidae),!.
