@@ -68,12 +68,9 @@ propiedades(cercopithecidae,'ubicacion geografica:africa').
 propiedades(cercopithecoidea,'ubicacion geografica:africa').
 propiedades('ubicacion geografica:africa','todos pertenecen a la clasificacion de los monos').
 propiedades('todos pertenecen a la clasificacion de los monos','tamano maximo').
-propiedades('tamano maximo','1.3 metros').
-propiedades('1.3 metros','peso maximo').
-propiedades('peso maximo','8 kg').
-propiedades('8 kg','espectativa de vida').
-propiedades('espectativa de vida','25 anos').
-propiedades('25 anos',fin).
+propiedades('tamano maximo 1.3 metros','peso maximo 8 kg').
+propiedades('peso maximo 8 kg','espectativa de vida 25 anos')..
+propiedades('espectativa de vida 25 anos',fin).
 
 %propiedades(cercopithecinae).
 propiedades(cercopithecinae,'bolsas en las mejillas para almacenar comida').
