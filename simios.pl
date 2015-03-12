@@ -120,7 +120,7 @@ propiedades('sus brazos son 1.5 veces mas largas que su torso','pueden caminar e
 propiedades('pueden caminar en dos patas','pero suelen caminar en cuatro').
 propiedades('pero suelen caminar en cuatro',fin).
 %gorilla
-propiedades('gorilla','simio mas grande').
+propiedades(gorilla,'simio mas grande').
 propiedades('simio mas grande','pesan maximo 180 kg').
 propiedades('pesan maximo 180 kg',fin).
 
@@ -207,3 +207,5 @@ prop(L,X):-p([fin|L],[fin|L],X). %comprueba propiedades
 
 clasificacion(L,Y,R):-rama(Y,Z),prop(L,Z),append([Y,Z],[],R).
 clasificacion(L,Y,R):-rama(Y,Z),not(prop(L,Z)),clasificacion(L,Z,R1),append([Y],R1,R).
+
+clasificar(L):-clasificacion(L,primates,R), write(R).
