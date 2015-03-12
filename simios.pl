@@ -205,5 +205,5 @@ prop(L,X):-p([fin|L],[fin|L],X). %comprueba propiedades
 %clasificacion(L,Y,R):-rama(Y,Z),prop(L,Z),not(clasificacion1(L,Z,R1)),append([Z,Y],[],R).
 %clasificacion(L,Y,R):-rama(Y,Z),prop(L,Z),clasificacion1(L,Z,R1),append([Y],R1,R).
 
-clasificacion(L,Y,R):-rama(Y,Z),prop(L,Z),append([Y,Z],R1,R).
+clasificacion(L,Y,R):-rama(Y,Z),prop(L,Z),append([Y,Z],[],R).
 clasificacion(L,Y,R):-rama(Y,Z),not(prop(L,Z)),clasificacion(L,Z,R1),append([Y],R1,R).
