@@ -64,6 +64,7 @@ propiedades('colas no prensiles','poseen callosidades isquiaticas').
 propiedades('poseen callosidades isquiaticas',fin).
 
 %propiedades(cercopithecoidea).
+propiedades(cercopithecidae,'ubicacion geografica:africa').
 propiedades(cercopithecoidea,'ubicacion geografica:africa').
 propiedades('ubicacion geografica:africa','todos pertenecen a la clasificacion de los monos').
 propiedades('todos pertenecen a la clasificacion de los monos','tamano maximo').
@@ -152,3 +153,57 @@ pongo:-mostrar(pongo),!.
 pan:-mostrar(pan),!.
 gorilla:-mostrar(gorilla),!.
 hominidae:-mostrar(hominidae),!.
+
+ 
+%-----------------------------------------------------------------------------------
+rama(primates,anthropoidea).
+rama(primates,prosimii).
+rama(prosimii,lemuriformes).
+rama(lemuriformes,fin).
+rama(prosimii,lorisiformes).
+rama(lorisiformes,fin).
+rama(prosimii,tarsiformes).
+rama(tarsiformes,fin).
+rama(anthropoidea,catarrhini).
+rama(anthropoidea,platyrrhini).
+rama(catarrhini,hominoidea).
+rama(catarrhini,cercopithecoidea).
+rama(platyrrhini,ceboidea).
+rama(ceboidea,callitrichidae).
+rama(callitrichidae,fin).
+rama(ceboidea,atelidae).
+rama(atelidae,fin).
+rama(ceboidea,cebidae).
+rama(cebidae,fin).
+rama(cercopithecoidea,cercopithecidae).%---
+rama(hominoidea,hylobatidae).
+rama(hominoidea,pongidae).
+rama(hominoidea,hominidae).
+rama(cercopithecidae,cercopithecinae).
+rama(cercopithecinae,fin).
+rama(cercopithecidae,colombinae).
+rama(colombinae,fin).
+rama(pongidae,pongo).%---
+rama(pongo,fin).
+rama(pongidae,pan).%---
+rama(pan,fin).
+rama(pongidae,gorilla).%---
+rama(gorilla,fin).
+rama(hominidae,homo).
+rama(homo,fin).
+
+p([A|_],H,X):-pa(X,A),A=fin.
+p([A|L],H,X):-not(pa(X,A)),p(L,H,X).
+p([A|L],H,X):-pa(X,A),p(H,H,A).
+prop(L,X):-p([final|L],[final|L],X). %comprueba propiedades
+
+%clasificacion1(L,Y,R):-rama(Y,Z),not(prop(L,Z)),rama(Z,F), F==fin,fail.
+%clasificacion1(L,Y,R):-rama(Y,Z),not(prop(L,Z)),clasificacion1(L,Z,R1),append([Y],R1,R).
+%clasificacion1(L,Y,R):-rama(Y,Z),Z==fin,append([Y],[],R).
+%clasificacion1(L,Y,R):-rama(Y,Z),prop(L,Z),clasificacion1(L,Z,R1),append([Y],R1,R).
+
+%clasificacion(L,Y,R):-rama(Y,Z),prop(L,Z),not(clasificacion1(L,Z,R1)),append([Z,Y],[],R).
+%clasificacion(L,Y,R):-rama(Y,Z),prop(L,Z),clasificacion1(L,Z,R1),append([Y],R1,R).
+
+clasificacion(L,Y,R):-rama(Y,Z),prop(L,Z),append([Y,Z],R1,R).
+clasificacion(L,Y,R):-rama(Y,Z),not(prop(L,Z)),clasificacion(L,Z,R1),append([Y],R1,R).
